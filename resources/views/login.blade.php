@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="navbar">
             <div class="logo"><a href="#">Civil Enginner</a></div>
@@ -45,9 +45,9 @@
             dropDownMenu.classList.toggle('open')
             const isOpen = dropDownMenu.classList.contains('open')
 
-            toggleBtnIcon.classList = isOpen ?
-                'fa-solid fa-xmark' :
-                'fa-solid fa-bars'
+            toggleBtnIcon.classList = isOpen 
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
         }
     </script>
 

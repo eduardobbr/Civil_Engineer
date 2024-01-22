@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Marck+Script&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
     background-size: cover;
     background-position: center;
+    padding-top: 20px;
 }
 
 li {
@@ -43,9 +46,12 @@ header {
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar .logo img {
+    width: 100px;
+    height: 100px;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .navbar .links {
@@ -96,6 +102,7 @@ header {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000; /* Set a high z-index value */
 }
 
 .dropdown_menu.open{
@@ -115,6 +122,9 @@ header {
     justify-content: center;
 }
 
+.hidden{ 
+    display: none;
+}
 
 /* RESPONSIVE DESIGN */
 
@@ -139,3 +149,67 @@ header {
         width: unset;
     }
 }
+
+/* MAIN */
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home_section {
+    color: #fff;
+    text-align: center;
+}
+
+.home_section h2 {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home_section p {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .home_section h2 {
+        font-size: 2.5rem; /* Ajuste o tamanho desejado para telas menores */
+    }
+
+    .home_section p {
+        font-size: 1.5rem; /* Ajuste o tamanho desejado para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .home_section h2 {
+        font-size: 2rem; /* Ajuste o tamanho desejado para telas ainda menores */
+    }
+
+    .home_section p {
+        font-size: 1rem; /* Ajuste o tamanho desejado para telas ainda menores */
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+footer p{
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
