@@ -22,7 +22,7 @@ li {
 a {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 a:hover {
@@ -56,7 +56,7 @@ header {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .navbar .toggle_btn {
@@ -73,7 +73,7 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
@@ -106,7 +106,7 @@ header {
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 280px;
 }
 
 .dropdown_menu li {
@@ -203,7 +203,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #000000b8;
 }
 
 footer p{
@@ -212,4 +212,3 @@ footer p{
     margin: 0px;
     text-align: center;
 }
-
