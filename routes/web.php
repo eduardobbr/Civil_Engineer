@@ -5,12 +5,9 @@ use App\Http\Controllers\LoginController;
 
 
 // Rota para a pagina principal 
-
 Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
-
-
 
 
 // Rotas para o login
