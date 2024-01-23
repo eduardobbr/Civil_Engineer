@@ -17,3 +17,8 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+// Rotas para o Cadastro
+Route::get('/cadastro', function () {
+    return view('cadastro');
+})->name('cadastro');
