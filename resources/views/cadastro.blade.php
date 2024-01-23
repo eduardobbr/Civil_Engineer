@@ -46,7 +46,6 @@
 
             <button type="submit">Cadastrar</button>
             <p class="no-account">Já tem uma conta? <a href="{{ route('login') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Fazer login</a></p>
-
         </form>
     </main>
 

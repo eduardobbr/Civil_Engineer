@@ -46,7 +46,6 @@
 
             <button type="submit">Entrar</button>
             <p class="no-account">Ainda não tem uma conta? <a href="{{ route('cadastro') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Registre-se</a></p>
-
         </form>
     </main>
 

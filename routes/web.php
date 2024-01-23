@@ -9,7 +9,6 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
-
 // Rotas para o login
 Route::get('/login', function () {
     return view('login');

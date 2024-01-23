@@ -21,25 +21,25 @@
 
     <header>
         <div class="navbar">
-            <div class="logo"><a href="{{ route('dashboard')}}"><img src="./img/logo.png" alt=""></div>
+            <div class="logo"><a href="{{ route('dashboard') }}"><img src="./img/logo.png" alt=""></div>
             <ul class="links">
-                <li><a href="{{ route('dashboard')}}">Home</a></li>
+                <li><a href="{{ route('dashboard') }}">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <a href="{{ route('login')}}" class="action_btn">Fazer Login</a>
+            <a href="{{ route('login') }}" class="action_btn">Fazer Login</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="{{ route('dashboard')}}">Home</a></li>
+            <li><a href="{{ route('dashboard') }}">Home</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Serviços</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a href="#" class="action_btn">Fazer Login</a></li>
+            <li><a href="{{ route('login') }}" class="action_btn">Fazer Login</a></li>
         </div>
     </header>
 
