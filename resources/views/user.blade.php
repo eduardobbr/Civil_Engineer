@@ -10,7 +10,7 @@
     <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,6 +24,7 @@
             <div class="logo"><a href="{{ route('dashboard') }}"><img src="./img/logo.png" alt=""></div>
             <ul class="links">
                 <li><a href="{{ route('dashboard') }}">Home</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -32,30 +33,12 @@
 
         <div class="dropdown_menu">
             <li><a href="{{ route('dashboard') }}">Home</a></li>
+            <li><a href="#">Contato</a></li>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <!-- Adicione esta parte para exibir mensagens de erro -->
-            @if(session('error'))
-                <div class="alert alert-danger">
-                    {{ session('error') }}
-                </div>
-            @endif
-            
-        <form method="post" action="{{ route('login.authenticate') }}">
-            @csrf
-            <h2>LOGIN</h2>
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" id="username" name="username" required>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Entrar</button>
-            <p class="no-account">Ainda não tem uma conta? <a href="{{ route('cadastro') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Registre-se</a></p>
-        </form>
     </main>
 
 
@@ -77,18 +60,6 @@
                 'fa-solid fa-xmark' :
                 'fa-solid fa-bars'
         }
-
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
-
-        signUpButton.addEventListener('click', () => {
-            container.classList.add("right-panel-active");
-        });
-
-        signInButton.addEventListener('click', () => {
-            container.classList.remove("right-panel-active");
-        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

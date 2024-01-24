@@ -36,7 +36,26 @@
     </header>
 
     <main>
-        <form>
+        <div class="container">
+            <!-- Adicione esta parte para exibir mensagens de sucesso ou erro -->
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+        
+        <form method="post" action="{{ route('cadastro.cadastrar') }}">
+            @csrf
             <h2>CADASTRO</h2>
             <label for="username">Nome de Usuário:</label>
             <input type="text" id="username" name="username" required>
