@@ -11,28 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
 
     <header>
-        <div class="navbar">
-            <div class="logo"><a href="{{ route('dashboard') }}"><img src="./img/logo.png" alt=""></div>
-            <ul class="links">
-                <li><a href="{{ route('dashboard') }}">Home</a></li>
+        <nav>
+            <ul>
+                <a href="{{ route('dashboard') }}">Home</a>
+                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('cadastro') }}">Cadastro</a>
             </ul>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-
-        <div class="dropdown_menu">
-            <li><a href="{{ route('dashboard') }}">Home</a></li>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -44,7 +34,7 @@
                 </div>
             @endif
             
-        <form method="post" action="{{ route('login.authenticate') }}">
+    <form method="post" action="{{ route('login.authenticate') }}">
             @csrf
             <h2>LOGIN</h2>
             <label for="username">Nome de Usuário:</label>
@@ -65,18 +55,6 @@
 
 
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function() {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen ?
-                'fa-solid fa-xmark' :
-                'fa-solid fa-bars'
-        };
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
