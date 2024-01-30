@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Civil Enginner</title>
+    <title>Civil engineer</title>
 
     <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -60,7 +60,7 @@
 
 
     <footer>
-        <p class="rodape-direitos">&copy;2023 - Todos os Direitos Reservados.</p>
+        <p>&copy;2023 - Todos os Direitos Reservados.</p>
     </footer>
 
 

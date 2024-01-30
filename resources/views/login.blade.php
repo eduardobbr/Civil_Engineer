@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Civil Enginner</title>
+    <title>Civil engineer</title>
 
     <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -44,13 +44,13 @@
             <input type="password" id="password" name="password" required>
 
             <button type="submit">Entrar</button>
-            <p class="no-account">Ainda não tem uma conta? <a href="{{ route('cadastro') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Registre-se</a></p>
+            <p class="no-account">Não tem uma conta? <a href="{{ route('cadastro') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Registre-se</a></p>
         </form>
     </main>
 
 
     <footer>
-        <p class="rodape-direitos">&copy;2023 - Todos os Direitos Reservados.</p>
+        <p>&copy;2023 - Todos os Direitos Reservados.</p>
     </footer>
 
 

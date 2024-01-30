@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Civil Enginner</title>
+    <title>Civil Engineer</title>
 
     <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,21 +27,24 @@
         </nav>
     </header>
 
-    <main>       
-
-
+    <main>
+        <div class="image-container">
+            <img src="img\civil_engineer.png" alt="Imagem Civil Engineer">
+        </div>        
+        <h2>Beneficios do Sistema</h2>
     </main>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <footer>
-        <p class="rodape-direitos">&copy;2023 - Todos os Direitos Reservados.</p>
+        <p>&copy;2023 - Todos os Direitos Reservados.</p>
     </footer>
-
-
-    <script>
-    </script>
-
+    
+    
+    <script></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
 
