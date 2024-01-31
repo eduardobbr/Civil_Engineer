@@ -1,17 +1,30 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(49, 49, 49);
+}
+
+.fundo {
+    width: 100%;
+    height: 88vh; /* ou a altura desejada */
+    background-image: url('https://constru360.com.br/wp-content/uploads/2019/04/obras.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(60%)
 }
 
 nav {
-    background-color: rgb(255, 255, 255);
-    padding: 0.5px;
+    background-color: rgb(31, 78, 61);
+    backdrop-filter: blur(20px);
+    padding: 5px 0;
 }
 
 nav ul {
@@ -19,14 +32,14 @@ nav ul {
     margin-top: 10px;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul a {
-    padding: 10px;
-    font-size: 14px;
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
 }
 
 nav ul a:nth-last-child(2) {
@@ -39,7 +52,7 @@ nav ul a:last-child {
 
 @media (max-width: 768px) {
     nav ul a {
-        margin: 2px 0; /* Espaçamento entre os itens em telas menores */
+        margin: 2px 0;
     }
 }
 
@@ -126,15 +139,15 @@ button {
     }
 }
 
-footer{
-    background-color: rgb(255, 255, 255);
+footer {
+    background-color: rgb(31, 78, 61);
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
-    color: rgb(0, 0, 0);
+    color: #000;
     text-align: center;
     margin-top: 10px;
     font-size: 14px;

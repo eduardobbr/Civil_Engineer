@@ -15,16 +15,18 @@
 
 <body>
 
+    
     <header>
         <nav>
             <ul>
                 <a href="{{ route('dashboard') }}">Home</a>
-                <a href="{{ route('login') }}">Login</a>
-                <a href="{{ route('cadastro') }}">Cadastro</a>
             </ul>
         </nav>
     </header>
 
+    <div class="fundo">
+    </div>
+    
     <main>
         <div class="container">
             <!-- Adicione esta parte para exibir mensagens de erro -->
@@ -44,7 +46,6 @@
             <input type="password" id="password" name="password" required>
 
             <button type="submit">Entrar</button>
-            <p class="no-account">Não tem uma conta? <a href="{{ route('cadastro') }}" style="font-size: 15px; color:rgb(255, 115, 0)">Registre-se</a></p>
         </form>
     </main>
 

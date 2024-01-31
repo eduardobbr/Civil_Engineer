@@ -20,10 +20,12 @@
             <ul>
                 <a href="{{ route('dashboard') }}">Home</a>
                 <a href="{{ route('login') }}">Login</a>
-                <a href="{{ route('cadastro') }}">Cadastro</a>
             </ul>
         </nav>
     </header>
+
+    <div class="fundo">
+    </div>
     
     <main>
         <div class="container">

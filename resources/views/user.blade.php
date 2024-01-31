@@ -23,6 +23,9 @@
         </nav>
     </header>
 
+    <div class="fundo">
+    </div>
+
     <main>
     </main>
 
