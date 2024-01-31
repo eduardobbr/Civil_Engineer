@@ -25,11 +25,6 @@
 
             <!--NAV DESKTOP-->
             <ul class="nav-list-desktop">
-                <li class="nav-item" style="padding-left: 10px;">
-                    <a href="{{ route('dashboard') }}" class="nav-logo">
-                        <img src="" style="width: 100px;" alt="">
-                    </a>
-                </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Início</a>
                 </li>
@@ -158,7 +153,7 @@
                 <img class="alc" src="img\logo-civil.png" alt="">
                 <p class="sub">Civil Engineer</p>
                 <h2 style="margin-top: -12px;">Sobre o Nosso Software</h2>
-                <p>O Software de Gerenciamento de Construção da BioControl é uma solução abrangente para engenheiros e chefes de obra. Oferecemos uma plataforma centralizada para o acompanhamento e gestão eficiente de projetos de construção, proporcionando controle total sobre orçamentos, investimentos, observações, histórico de obras e muito mais...</p>
+                <p>O Software de Gerenciamento de Construção da Civil Engineer é uma solução abrangente para engenheiros e chefes de obra. Oferecemos uma plataforma centralizada para o acompanhamento e gestão eficiente de projetos de construção, proporcionando controle total sobre orçamentos, investimentos, observações, histórico de obras e muito mais...</p>
                 <ul class="circulo" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                     <li><i class="fa fa-check-circle" aria-hidden="true"></i>Registro de Despesas e Investimentos</li>
                     <li><i class="fa fa-check-circle" aria-hidden="true"></i>Acompanhamento de Funcionários</li>
